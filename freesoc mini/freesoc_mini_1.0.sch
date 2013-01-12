@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2260,7 +2260,6 @@ Basic small signal diode good up to 200mA. SMB footprint. Common part #: BAS16</
 </symbols>
 <devicesets>
 <deviceset name="M20" prefix="JP">
-<description>This is just like the LOCK variant in that the holes are staggared by 5 mil, but except for the last two holes.  They are not altered from the "standard" footprint layout.  This is used for a special purpose on the layout of our Graphic LCD Backpack.  Make sure you want to use this device before selecting it for you project!</description>
 <gates>
 <gate name="G$1" symbol="M20" x="0" y="0"/>
 </gates>
@@ -4161,16 +4160,14 @@ Source: http://www.onsemi.com/pub/Collateral/MC34164-D.PDF</description>
 </class>
 </classes>
 <parts>
-<part name="U$1" library="PSoC3" deviceset="CY8C3X66LTI" device=""/>
+<part name="U$1" library="PSoC3" deviceset="CY8C3X66LTI" device="">
+<attribute name="PN" value="CY8C5568LTI-114"/>
+</part>
 <part name="JP1" library="SparkFun" deviceset="M20" device=""/>
 <part name="JP2" library="SparkFun" deviceset="M20" device=""/>
-<part name="IC1" library="cypress" deviceset="CY7C6801*A-56QFN" device="LFXC" technology="3"/>
-<part name="R3" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="NOLOAD"/>
-<part name="R4" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="NOLOAD"/>
-<part name="R5" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="NOLOAD"/>
-<part name="SUPPLY3" library="supply2" deviceset="VCC" device=""/>
-<part name="SUPPLY4" library="supply2" deviceset="VCC" device=""/>
-<part name="SUPPLY5" library="supply2" deviceset="VCC" device=""/>
+<part name="IC1" library="cypress" deviceset="CY7C6801*A-56QFN" device="LFXC" technology="3">
+<attribute name="PN" value="CY7C68013A-56LTXC"/>
+</part>
 <part name="R6" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="39K"/>
 <part name="R7" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="62K"/>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
@@ -4178,64 +4175,132 @@ Source: http://www.onsemi.com/pub/Collateral/MC34164-D.PDF</description>
 <part name="GND3" library="SparkFun" deviceset="GND" device=""/>
 <part name="SUPPLY6" library="supply2" deviceset="VCC" device=""/>
 <part name="SUPPLY7" library="supply2" deviceset="VCC" device=""/>
-<part name="R8" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="10K"/>
+<part name="R8" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="10K">
+<attribute name="PN" value="ERJ-2GEJ103X"/>
+</part>
 <part name="SUPPLY8" library="supply2" deviceset="VCC" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="VCC" device=""/>
-<part name="R9" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="100k"/>
-<part name="C1" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
+<part name="R9" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="100k">
+<attribute name="PN" value="RR0510P-104-D"/>
+</part>
+<part name="C1" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF">
+<attribute name="PN" value="LMK105BJ104KV-F"/>
+</part>
 <part name="GND4" library="SparkFun" deviceset="GND" device=""/>
 <part name="SUPPLY10" library="supply2" deviceset="VCC" device=""/>
-<part name="C2" library="SparkFun" deviceset="CAP" device="0402-CAP" value="2.2uF"/>
-<part name="C3" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
+<part name="C2" library="SparkFun" deviceset="CAP" device="0402-CAP" value="2.2uF">
+<attribute name="PN" value="JMK105BJ225MV-F "/>
+</part>
+<part name="C3" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF">
+<attribute name="PN" value="LMK105BJ104KV-F"/>
+</part>
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
-<part name="IC2" library="microchip" deviceset="24*00" device="OT" technology="LC"/>
+<part name="IC2" library="microchip" deviceset="24*00" device="OT" technology="LC">
+<attribute name="PN" value="24LC00T"/>
+</part>
 <part name="SUPPLY11" library="supply2" deviceset="VCC" device=""/>
 <part name="GND6" library="SparkFun" deviceset="GND" device=""/>
-<part name="R10" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="2.2K"/>
-<part name="R11" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="2.2K"/>
+<part name="R10" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="2.2K">
+<attribute name="PN" value="ERJ-2RKF2201X"/>
+</part>
+<part name="R11" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="2.2K">
+<attribute name="PN" value="ERJ-2RKF2201X"/>
+</part>
 <part name="SUPPLY12" library="supply2" deviceset="VCC" device=""/>
 <part name="GND7" library="SparkFun" deviceset="GND" device=""/>
-<part name="C4" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
+<part name="C4" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF">
+<attribute name="PN" value="LMK105BJ104KV-F"/>
+</part>
 <part name="GND8" library="SparkFun" deviceset="GND" device=""/>
-<part name="C5" library="SparkFun" deviceset="CAP" device="0402-CAP" value="1.0uF"/>
-<part name="C6" library="SparkFun" deviceset="CAP" device="0402-CAP" value="1.0uF"/>
-<part name="C7" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
+<part name="C5" library="SparkFun" deviceset="CAP" device="0402-CAP" value="1.0uF">
+<attribute name="PN" value="JMK105BJ105KV-F"/>
+</part>
+<part name="C6" library="SparkFun" deviceset="CAP" device="0402-CAP" value="1.0uF">
+<attribute name="PN" value="JMK105BJ105KV-F"/>
+</part>
+<part name="C7" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF">
+<attribute name="PN" value="LMK105BJ104KV-F"/>
+</part>
 <part name="GND9" library="SparkFun" deviceset="GND" device=""/>
-<part name="C8" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
-<part name="C9" library="SparkFun" deviceset="CAP" device="0402-CAP" value="1.0uF"/>
+<part name="C8" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF">
+<attribute name="PN" value="LMK105BJ104KV-F"/>
+</part>
+<part name="C9" library="SparkFun" deviceset="CAP" device="0402-CAP" value="1.0uF">
+<attribute name="PN" value="JMK105BJ105KV-F"/>
+</part>
 <part name="GND10" library="SparkFun" deviceset="GND" device=""/>
-<part name="C10" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
+<part name="C10" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF">
+<attribute name="PN" value="LMK105BJ104KV-F"/>
+</part>
 <part name="GND11" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND12" library="SparkFun" deviceset="GND" device=""/>
-<part name="C11" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
+<part name="C11" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF">
+<attribute name="PN" value="LMK105BJ104KV-F"/>
+</part>
 <part name="GND13" library="SparkFun" deviceset="GND" device=""/>
-<part name="C12" library="SparkFun" deviceset="CAP" device="0402-CAP" value="1.0uF"/>
-<part name="C13" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
+<part name="C12" library="SparkFun" deviceset="CAP" device="0402-CAP" value="1.0uF">
+<attribute name="PN" value="JMK105BJ105KV-F"/>
+</part>
+<part name="C13" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF">
+<attribute name="PN" value="LMK105BJ104KV-F"/>
+</part>
 <part name="GND14" library="SparkFun" deviceset="GND" device=""/>
-<part name="C14" library="SparkFun" deviceset="CAP" device="0402-CAP" value="1.0uF"/>
+<part name="C14" library="SparkFun" deviceset="CAP" device="0402-CAP" value="1.0uF">
+<attribute name="PN" value="JMK105BJ105KV-F"/>
+</part>
 <part name="GND15" library="SparkFun" deviceset="GND" device=""/>
-<part name="C15" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
+<part name="C15" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF">
+<attribute name="PN" value="LMK105BJ104KV-F"/>
+</part>
 <part name="GND16" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND18" library="SparkFun" deviceset="GND" device=""/>
-<part name="C19" library="SparkFun" deviceset="CAP" device="0402-CAP" value="10pF"/>
-<part name="C20" library="SparkFun" deviceset="CAP" device="0402-CAP" value="10pF"/>
+<part name="C19" library="SparkFun" deviceset="CAP" device="0402-CAP" value="10pF">
+<attribute name="PN" value="GJM1555C1H100FB01D"/>
+</part>
+<part name="C20" library="SparkFun" deviceset="CAP" device="0402-CAP" value="10pF">
+<attribute name="PN" value="GJM1555C1H100FB01D"/>
+</part>
 <part name="GND19" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND20" library="SparkFun" deviceset="GND" device=""/>
-<part name="C21" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
-<part name="C22" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
-<part name="C23" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
-<part name="C24" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
-<part name="C25" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
+<part name="C21" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF">
+<attribute name="PN" value="LMK105BJ104KV-F"/>
+</part>
+<part name="C22" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF">
+<attribute name="PN" value="LMK105BJ104KV-F"/>
+</part>
+<part name="C23" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF">
+<attribute name="PN" value="LMK105BJ104KV-F"/>
+</part>
+<part name="C24" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF">
+<attribute name="PN" value="LMK105BJ104KV-F"/>
+</part>
+<part name="C25" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF">
+<attribute name="PN" value="LMK105BJ104KV-F"/>
+</part>
 <part name="SUPPLY19" library="supply2" deviceset="VCC" device=""/>
 <part name="GND21" library="SparkFun" deviceset="GND" device=""/>
-<part name="C26" library="SparkFun" deviceset="CAP" device="0402-CAP" value="10nF"/>
-<part name="C27" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
-<part name="C28" library="SparkFun" deviceset="CAP" device="0402-CAP" value="10nF"/>
-<part name="R12" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="100k"/>
+<part name="C26" library="SparkFun" deviceset="CAP" device="0402-CAP" value="10nF">
+<attribute name="PN" value="TMK105B7103KV-F"/>
+</part>
+<part name="C27" library="SparkFun" deviceset="CAP" device="0402-CAP" value="0.1uF">
+<attribute name="PN" value="LMK105BJ104KV-F"/>
+</part>
+<part name="C28" library="SparkFun" deviceset="CAP" device="0402-CAP" value="10nF">
+<attribute name="PN" value="TMK105B7103KV-F"/>
+</part>
+<part name="R12" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="100k">
+<attribute name="PN" value="RR0510P-104-D"/>
+</part>
 <part name="GND22" library="SparkFun" deviceset="GND" device=""/>
-<part name="Y1" library="SparkFun" deviceset="CRYSTAL" device="XRCGB" value="XRCGB24M000F0L00R0"/>
-<part name="R13" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="1K"/>
-<part name="USB-MINIB" library="SparkFun" deviceset="USB-MINIB" device="-5PIN"/>
+<part name="Y1" library="SparkFun" deviceset="CRYSTAL" device="XRCGB" value="XRCGB24M000F0L00R0">
+<attribute name="PN" value="XRCGB24M000F0L00R0"/>
+</part>
+<part name="R13" library="SparkFun" deviceset="RESISTOR" device="0402-RES" value="1K">
+<attribute name="PN" value="ERJ-2RKF1001X"/>
+</part>
+<part name="USB-MINIB" library="SparkFun" deviceset="USB-MINIB" device="-5PIN">
+<attribute name="PN" value="10033526-N3212LF"/>
+</part>
 <part name="VDD1" library="supply1" deviceset="VDD" device=""/>
 <part name="VDD2" library="supply1" deviceset="VDD" device=""/>
 <part name="VDD3" library="supply1" deviceset="VDD" device=""/>
@@ -4244,19 +4309,33 @@ Source: http://www.onsemi.com/pub/Collateral/MC34164-D.PDF</description>
 <part name="VDD6" library="supply1" deviceset="VDD" device=""/>
 <part name="VDD7" library="supply1" deviceset="VDD" device=""/>
 <part name="VDD8" library="supply1" deviceset="VDD" device=""/>
-<part name="U$3" library="linear" deviceset="NCP700B" device="" value="FAN2558S36X"/>
-<part name="C29" library="SparkFun" deviceset="CAP" device="0402-CAP" value="1.0uF"/>
+<part name="U$3" library="linear" deviceset="NCP700B" device="" value="FAN2558S36X">
+<attribute name="PN" value="FAN2558S36X"/>
+</part>
+<part name="C29" library="SparkFun" deviceset="CAP" device="0402-CAP" value="1.0uF">
+<attribute name="PN" value="JMK105BJ105KV-F"/>
+</part>
 <part name="GND23" library="SparkFun" deviceset="GND" device=""/>
-<part name="C31" library="SparkFun" deviceset="CAP" device="0402-CAP" value="1.0uF"/>
+<part name="C31" library="SparkFun" deviceset="CAP" device="0402-CAP" value="1.0uF">
+<attribute name="PN" value="JMK105BJ105KV-F"/>
+</part>
 <part name="GND24" library="SparkFun" deviceset="GND" device=""/>
-<part name="D2" library="SparkFun" deviceset="DIODE" device="SOD" value="NSVR0320MW2T1G"/>
+<part name="D2" library="SparkFun" deviceset="DIODE" device="SOD" value="NSVR0320MW2T1G">
+<attribute name="PN" value="NSVR0320MW2T1G"/>
+</part>
 <part name="VDD10" library="supply1" deviceset="VDD" device=""/>
-<part name="D1" library="SparkFun" deviceset="DIODE" device="SOD" value="NSVR0320MW2T1G"/>
+<part name="D1" library="SparkFun" deviceset="DIODE" device="SOD" value="NSVR0320MW2T1G">
+<attribute name="PN" value="NSVR0320MW2T1G"/>
+</part>
 <part name="SUPPLY13" library="supply2" deviceset="VCC" device=""/>
-<part name="C16" library="SparkFun" deviceset="CAP" device="0603-CAP" value="4.7uF"/>
+<part name="C16" library="SparkFun" deviceset="CAP" device="0603-CAP" value="4.7uF">
+<attribute name="PN" value="CC0603KRX5R6BB475"/>
+</part>
 <part name="SUPPLY14" library="supply2" deviceset="VCC" device=""/>
 <part name="VDD9" library="supply1" deviceset="VDD" device=""/>
-<part name="C17" library="SparkFun" deviceset="CAP" device="0603-CAP" value="4.7uF"/>
+<part name="C17" library="SparkFun" deviceset="CAP" device="0603-CAP" value="4.7uF">
+<attribute name="PN" value="CC0603KRX5R6BB475"/>
+</part>
 <part name="GND17" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND25" library="SparkFun" deviceset="GND" device=""/>
 </parts>
@@ -4272,17 +4351,15 @@ Source: http://www.onsemi.com/pub/Collateral/MC34164-D.PDF</description>
 <text x="40.64" y="-87.122" size="1.778" layer="97">TM</text>
 </plain>
 <instances>
-<instance part="U$1" gate="G$1" x="66.04" y="45.72"/>
+<instance part="U$1" gate="G$1" x="66.04" y="45.72">
+<attribute name="PN" x="66.04" y="45.72" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="U$1" gate="G$2" x="17.78" y="12.7"/>
 <instance part="JP1" gate="G$1" x="63.5" y="193.04" rot="R180"/>
 <instance part="JP2" gate="G$1" x="124.46" y="195.58" rot="R180"/>
-<instance part="IC1" gate="G$1" x="248.92" y="93.98"/>
-<instance part="R3" gate="G$1" x="314.96" y="114.3" rot="R90"/>
-<instance part="R4" gate="G$1" x="322.58" y="114.3" rot="R90"/>
-<instance part="R5" gate="G$1" x="330.2" y="114.3" rot="R90"/>
-<instance part="SUPPLY3" gate="G$1" x="314.96" y="121.92"/>
-<instance part="SUPPLY4" gate="G$1" x="322.58" y="121.92"/>
-<instance part="SUPPLY5" gate="G$1" x="330.2" y="121.92"/>
+<instance part="IC1" gate="G$1" x="248.92" y="93.98">
+<attribute name="PN" x="248.92" y="93.98" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R6" gate="G$1" x="340.36" y="96.52" rot="R90"/>
 <instance part="R7" gate="G$1" x="340.36" y="81.28" rot="R90"/>
 <instance part="GND1" gate="1" x="340.36" y="73.66"/>
@@ -4290,64 +4367,132 @@ Source: http://www.onsemi.com/pub/Collateral/MC34164-D.PDF</description>
 <instance part="GND3" gate="1" x="180.34" y="40.64"/>
 <instance part="SUPPLY6" gate="G$1" x="226.06" y="147.32"/>
 <instance part="SUPPLY7" gate="G$1" x="226.06" y="93.98" rot="R90"/>
-<instance part="R8" gate="G$1" x="218.44" y="121.92" rot="R180"/>
+<instance part="R8" gate="G$1" x="218.44" y="121.92" rot="R180">
+<attribute name="PN" x="218.44" y="121.92" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="SUPPLY8" gate="G$1" x="210.82" y="124.46"/>
 <instance part="SUPPLY9" gate="G$1" x="195.58" y="144.78"/>
-<instance part="R9" gate="G$1" x="195.58" y="137.16" rot="R270"/>
-<instance part="C1" gate="G$1" x="187.96" y="127"/>
+<instance part="R9" gate="G$1" x="195.58" y="137.16" rot="R270">
+<attribute name="PN" x="195.58" y="137.16" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="C1" gate="G$1" x="187.96" y="127">
+<attribute name="PN" x="187.96" y="127" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND4" gate="1" x="187.96" y="121.92"/>
 <instance part="SUPPLY10" gate="G$1" x="200.66" y="73.66"/>
-<instance part="C2" gate="G$1" x="198.12" y="63.5"/>
-<instance part="C3" gate="G$1" x="208.28" y="63.5"/>
+<instance part="C2" gate="G$1" x="198.12" y="63.5">
+<attribute name="PN" x="198.12" y="63.5" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C3" gate="G$1" x="208.28" y="63.5">
+<attribute name="PN" x="208.28" y="63.5" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND5" gate="1" x="203.2" y="55.88"/>
-<instance part="IC2" gate="G$1" x="165.1" y="86.36"/>
+<instance part="IC2" gate="G$1" x="165.1" y="86.36">
+<attribute name="PN" x="165.1" y="86.36" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="SUPPLY11" gate="G$1" x="182.88" y="91.44" rot="R270"/>
 <instance part="GND6" gate="1" x="182.88" y="81.28" rot="R90"/>
-<instance part="R10" gate="G$1" x="182.88" y="109.22" rot="R270"/>
-<instance part="R11" gate="G$1" x="175.26" y="109.22" rot="R270"/>
+<instance part="R10" gate="G$1" x="182.88" y="109.22" rot="R270">
+<attribute name="PN" x="182.88" y="109.22" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
+<instance part="R11" gate="G$1" x="175.26" y="109.22" rot="R270">
+<attribute name="PN" x="175.26" y="109.22" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 <instance part="SUPPLY12" gate="G$1" x="177.8" y="121.92"/>
 <instance part="GND7" gate="1" x="215.9" y="91.44" rot="R270"/>
-<instance part="C4" gate="G$1" x="162.56" y="40.64"/>
+<instance part="C4" gate="G$1" x="162.56" y="40.64">
+<attribute name="PN" x="162.56" y="40.64" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND8" gate="1" x="147.32" y="30.48"/>
-<instance part="C5" gate="G$1" x="147.32" y="40.64"/>
-<instance part="C6" gate="G$1" x="129.54" y="35.56"/>
-<instance part="C7" gate="G$1" x="111.76" y="7.62"/>
+<instance part="C5" gate="G$1" x="147.32" y="40.64">
+<attribute name="PN" x="147.32" y="40.64" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C6" gate="G$1" x="129.54" y="35.56">
+<attribute name="PN" x="129.54" y="35.56" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C7" gate="G$1" x="111.76" y="7.62">
+<attribute name="PN" x="111.76" y="7.62" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND9" gate="1" x="111.76" y="2.54"/>
-<instance part="C8" gate="G$1" x="53.34" y="-27.94"/>
-<instance part="C9" gate="G$1" x="43.18" y="-27.94"/>
+<instance part="C8" gate="G$1" x="53.34" y="-27.94">
+<attribute name="PN" x="53.34" y="-27.94" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C9" gate="G$1" x="43.18" y="-27.94">
+<attribute name="PN" x="43.18" y="-27.94" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND10" gate="1" x="43.18" y="-38.1"/>
-<instance part="C10" gate="G$1" x="25.4" y="-20.32"/>
+<instance part="C10" gate="G$1" x="25.4" y="-20.32">
+<attribute name="PN" x="25.4" y="-20.32" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND11" gate="1" x="25.4" y="-27.94"/>
 <instance part="GND12" gate="1" x="5.08" y="38.1"/>
-<instance part="C11" gate="G$1" x="15.24" y="86.36"/>
+<instance part="C11" gate="G$1" x="15.24" y="86.36">
+<attribute name="PN" x="15.24" y="86.36" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND13" gate="1" x="15.24" y="78.74"/>
-<instance part="C12" gate="G$1" x="45.72" y="104.14"/>
-<instance part="C13" gate="G$1" x="55.88" y="104.14"/>
+<instance part="C12" gate="G$1" x="45.72" y="104.14">
+<attribute name="PN" x="45.72" y="104.14" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C13" gate="G$1" x="55.88" y="104.14">
+<attribute name="PN" x="55.88" y="104.14" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND14" gate="1" x="50.8" y="96.52"/>
-<instance part="C14" gate="G$1" x="91.44" y="109.22"/>
+<instance part="C14" gate="G$1" x="91.44" y="109.22">
+<attribute name="PN" x="91.44" y="109.22" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND15" gate="1" x="91.44" y="96.52"/>
-<instance part="C15" gate="G$1" x="114.3" y="81.28"/>
+<instance part="C15" gate="G$1" x="114.3" y="81.28">
+<attribute name="PN" x="114.3" y="81.28" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND16" gate="1" x="114.3" y="73.66"/>
 <instance part="GND18" gate="1" x="-7.62" y="17.78" rot="R270"/>
-<instance part="C19" gate="G$1" x="205.74" y="116.84" rot="R90"/>
-<instance part="C20" gate="G$1" x="208.28" y="106.68" rot="R90"/>
+<instance part="C19" gate="G$1" x="205.74" y="116.84" rot="R90">
+<attribute name="PN" x="205.74" y="116.84" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="C20" gate="G$1" x="208.28" y="106.68" rot="R90">
+<attribute name="PN" x="208.28" y="106.68" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="GND19" gate="1" x="198.12" y="114.3"/>
 <instance part="GND20" gate="1" x="203.2" y="104.14"/>
-<instance part="C21" gate="G$1" x="254" y="157.48"/>
-<instance part="C22" gate="G$1" x="264.16" y="157.48"/>
-<instance part="C23" gate="G$1" x="274.32" y="157.48"/>
-<instance part="C24" gate="G$1" x="284.48" y="157.48"/>
-<instance part="C25" gate="G$1" x="294.64" y="157.48"/>
+<instance part="C21" gate="G$1" x="254" y="157.48">
+<attribute name="PN" x="254" y="157.48" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C22" gate="G$1" x="264.16" y="157.48">
+<attribute name="PN" x="264.16" y="157.48" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C23" gate="G$1" x="274.32" y="157.48">
+<attribute name="PN" x="274.32" y="157.48" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C24" gate="G$1" x="284.48" y="157.48">
+<attribute name="PN" x="284.48" y="157.48" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C25" gate="G$1" x="294.64" y="157.48">
+<attribute name="PN" x="294.64" y="157.48" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="SUPPLY19" gate="G$1" x="254" y="167.64"/>
 <instance part="GND21" gate="1" x="254" y="149.86"/>
-<instance part="C26" gate="G$1" x="304.8" y="157.48"/>
-<instance part="C27" gate="G$1" x="314.96" y="157.48"/>
-<instance part="C28" gate="G$1" x="195.58" y="22.86"/>
-<instance part="R12" gate="G$1" x="210.82" y="22.86" rot="R270"/>
+<instance part="C26" gate="G$1" x="304.8" y="157.48">
+<attribute name="PN" x="304.8" y="157.48" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C27" gate="G$1" x="314.96" y="157.48">
+<attribute name="PN" x="314.96" y="157.48" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C28" gate="G$1" x="195.58" y="22.86">
+<attribute name="PN" x="195.58" y="22.86" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R12" gate="G$1" x="210.82" y="22.86" rot="R270">
+<attribute name="PN" x="210.82" y="22.86" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 <instance part="GND22" gate="1" x="193.04" y="15.24" rot="R270"/>
-<instance part="Y1" gate="G$1" x="213.36" y="114.3" rot="R90"/>
-<instance part="R13" gate="G$1" x="220.98" y="111.76" rot="R180"/>
-<instance part="USB-MINIB" gate="G$1" x="187.96" y="43.18"/>
+<instance part="Y1" gate="G$1" x="213.36" y="114.3" rot="R90">
+<attribute name="PN" x="213.36" y="114.3" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R13" gate="G$1" x="220.98" y="111.76" rot="R180">
+<attribute name="PN" x="220.98" y="111.76" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="USB-MINIB" gate="G$1" x="187.96" y="43.18">
+<attribute name="PN" x="187.96" y="43.18" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="VDD1" gate="G$1" x="111.76" y="20.32"/>
 <instance part="VDD2" gate="G$1" x="147.32" y="55.88"/>
 <instance part="VDD3" gate="G$1" x="114.3" y="91.44"/>
@@ -4356,19 +4501,33 @@ Source: http://www.onsemi.com/pub/Collateral/MC34164-D.PDF</description>
 <instance part="VDD6" gate="G$1" x="53.34" y="-15.24"/>
 <instance part="VDD7" gate="G$1" x="25.4" y="-7.62"/>
 <instance part="VDD8" gate="G$1" x="106.68" y="193.04"/>
-<instance part="U$3" gate="G$1" x="139.7" y="-40.64"/>
-<instance part="C29" gate="G$1" x="106.68" y="-45.72" rot="R270"/>
+<instance part="U$3" gate="G$1" x="139.7" y="-40.64">
+<attribute name="PN" x="139.7" y="-40.64" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C29" gate="G$1" x="106.68" y="-45.72" rot="R270">
+<attribute name="PN" x="106.68" y="-45.72" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 <instance part="GND23" gate="1" x="116.84" y="-66.04"/>
-<instance part="C31" gate="G$1" x="160.02" y="-45.72"/>
+<instance part="C31" gate="G$1" x="160.02" y="-45.72">
+<attribute name="PN" x="160.02" y="-45.72" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND24" gate="1" x="160.02" y="-50.8"/>
-<instance part="D2" gate="G$1" x="175.26" y="-40.64"/>
+<instance part="D2" gate="G$1" x="175.26" y="-40.64">
+<attribute name="PN" x="175.26" y="-40.64" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="VDD10" gate="G$1" x="187.96" y="-40.64" rot="R270"/>
-<instance part="D1" gate="G$1" x="175.26" y="-30.48"/>
+<instance part="D1" gate="G$1" x="175.26" y="-30.48">
+<attribute name="PN" x="175.26" y="-30.48" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="SUPPLY13" gate="G$1" x="187.96" y="-27.94"/>
-<instance part="C16" gate="G$1" x="213.36" y="-38.1"/>
+<instance part="C16" gate="G$1" x="213.36" y="-38.1">
+<attribute name="PN" x="213.36" y="-38.1" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="SUPPLY14" gate="G$1" x="213.36" y="-30.48"/>
 <instance part="VDD9" gate="G$1" x="226.06" y="-27.94"/>
-<instance part="C17" gate="G$1" x="226.06" y="-35.56"/>
+<instance part="C17" gate="G$1" x="226.06" y="-35.56">
+<attribute name="PN" x="226.06" y="-35.56" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND17" gate="1" x="213.36" y="-43.18"/>
 <instance part="GND25" gate="1" x="226.06" y="-40.64"/>
 </instances>
@@ -4580,18 +4739,6 @@ Source: http://www.onsemi.com/pub/Collateral/MC34164-D.PDF</description>
 </segment>
 </net>
 <net name="VCC" class="0">
-<segment>
-<pinref part="R3" gate="G$1" pin="2"/>
-<pinref part="SUPPLY3" gate="G$1" pin="VCC"/>
-</segment>
-<segment>
-<pinref part="R4" gate="G$1" pin="2"/>
-<pinref part="SUPPLY4" gate="G$1" pin="VCC"/>
-</segment>
-<segment>
-<pinref part="R5" gate="G$1" pin="2"/>
-<pinref part="SUPPLY5" gate="G$1" pin="VCC"/>
-</segment>
 <segment>
 <wire x1="236.22" y1="134.62" x2="236.22" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="144.78" x2="226.06" y2="144.78" width="0.1524" layer="91"/>
@@ -4969,10 +5116,8 @@ Source: http://www.onsemi.com/pub/Collateral/MC34164-D.PDF</description>
 <net name="SWDIO" class="0">
 <segment>
 <wire x1="269.24" y1="106.68" x2="314.96" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="314.96" y1="106.68" x2="314.96" y2="109.22" width="0.1524" layer="91"/>
 <label x="276.86" y="106.68" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="PD0/FD8"/>
-<pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="30.48" y1="40.64" x2="17.78" y2="40.64" width="0.1524" layer="91"/>
@@ -4983,10 +5128,8 @@ Source: http://www.onsemi.com/pub/Collateral/MC34164-D.PDF</description>
 <net name="SWDCK" class="0">
 <segment>
 <wire x1="269.24" y1="104.14" x2="322.58" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="322.58" y1="104.14" x2="322.58" y2="109.22" width="0.1524" layer="91"/>
 <label x="276.86" y="104.14" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="PD1/FD9"/>
-<pinref part="R4" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="30.48" y1="38.1" x2="17.78" y2="38.1" width="0.1524" layer="91"/>
@@ -4997,10 +5140,8 @@ Source: http://www.onsemi.com/pub/Collateral/MC34164-D.PDF</description>
 <net name="SWV" class="0">
 <segment>
 <wire x1="269.24" y1="101.6" x2="330.2" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="330.2" y1="101.6" x2="330.2" y2="109.22" width="0.1524" layer="91"/>
 <label x="276.86" y="101.6" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="PD2/FD10"/>
-<pinref part="R5" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <wire x1="30.48" y1="33.02" x2="17.78" y2="33.02" width="0.1524" layer="91"/>
